@@ -41,7 +41,7 @@
         <!-- Contact Form -->
         <form action="">
           <h1>Contact</h1>
-          <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+          <p class="required">Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
           <section>
             <h2>Contact information</h2>
             <p>
@@ -61,12 +61,12 @@
             <p>
               <label for="question">
                 <span>Question: </span>
-                <textarea name="question" id="question" cols="80" rows="10">Share about your bird sighting or ask a question.</textarea>
+                <textarea name="question" id="question" cols="40" rows="10">Share about your bird sighting or ask a question.</textarea>
               </label>
               <p>
                 <label for="mailing-list">
-                  <p>Would you like to recieve email notification of new and upcoming blog posts?</p>
-                  <input type="radio" name="mailing-list" value="">
+                  <p class="required">Would you like to recieve email notifications of new and upcoming blog posts?</p>
+                  <input class="radio" type="radio" name="mailing-list" value="">
                 </label>
               </p>
             </p>

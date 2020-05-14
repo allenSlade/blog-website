@@ -15,6 +15,7 @@ html {
   background-color: rgba(255, 255, 255, 0.35);
   background-blend-mode: lighten;
   margin: 0;
+  font-size: 100%;
 }
 
 /* ### GRID CONTAINER ###
@@ -121,7 +122,41 @@ body {
   grid-row: 2/12;
   grid-column: 3/11;
   padding: 10%;
+  font-family: "Open Sans";
 }
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+}
+
+.required {
+  font-size: 0.75em;
+}
+
+input, textarea {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-style: solid;
+  border-width: thin;
+  /* height: 125%; */
+}
+
+main {
+  color: #000;
+}
+
+button {
+  background-color: #2C909C;
+  padding: 10px;
+  font-size: 0.75em;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: #2C909C;
+  background-color: white;
+}
+
 
 
 
@@ -210,6 +245,10 @@ ___________________________________*/
     "footer footer footer footer footer footer footer footer footer footer footer footer";
     justify-content: center;
   }
+}
+
+main {
+  font-size: 1.25em;
 }
 
 /* medium screens */
@@ -305,27 +344,21 @@ ___________________________________*/
     width: 0;
   }
 
-/* card styles */
-  .blog-card1, .blog-card2, .blog-card3 {
-    grid-area: main;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
+  h2 {
+    font-size: 1em;
   }
 
-  h2.card-title {
-    font-size: 0.75em;
+  p, input {
+    margin-bottom: 10px;
   }
 
-  p.author {
-    font-size: 0.75em;
+  main {
+    font-size: 0.85em;
   }
 
-  a.button {
-    font-size: small;
-    padding: 5px;
-  }
 
+
+/* footer styles */
   footer {
     display: flex;
     width: 100%;
