@@ -38,6 +38,7 @@
     <!-- main section -->
     <div class="main">
       <main  id="main" role="main">
+        <!-- Contact Form -->
         <form action="">
           <h1>Contact</h1>
           <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
@@ -50,7 +51,27 @@
                 <input type="text">
               </label>
             </p>
+            <p>
+              <label for="mail">
+                <span>Email: </span>
+                <strong><abbr title="required">*</abbr></strong>
+                <input type="text">
+              </label>
+            </p>
+            <p>
+              <label for="question">
+                <span>Question: </span>
+                <textarea name="question" id="question" cols="80" rows="10">Share about your bird sighting or ask a question.</textarea>
+              </label>
+              <p>
+                <label for="mailing-list">
+                  <p>Would you like to recieve email notification of new and upcoming blog posts?</p>
+                  <input type="radio" name="mailing-list" value="">
+                </label>
+              </p>
+            </p>
           </section>
+          <p><button type="submit">Submit</button></p>
         </form>
 
       </main>
