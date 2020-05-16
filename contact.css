@@ -2,14 +2,6 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
-
-html {
   background: url(images/contact-image.jpg) no-repeat center center fixed;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.35);
@@ -17,6 +9,14 @@ html {
   margin: 0;
   font-size: 100%;
 }
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+  @import url(//fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap);
+  @import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 /* ### GRID CONTAINER ###
 _____________________________________*/
@@ -40,7 +40,7 @@ _____________________________________*/
 ____________________________________*/
 
 /* main header container */
-.header {
+header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,13 +53,6 @@ ____________________________________*/
   margin: 0;
   font-size: 20px;
   color: #D0BBA3;
-}
-
-#head {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 img {
@@ -116,7 +109,7 @@ body {
 }
 
 /* main container */
-.main {
+main {
   display: flex;
   flex-direction: column;
   grid-row: 2/12;
@@ -158,10 +151,6 @@ button:hover {
 }
 
 
-
-
-
-
 /*  ### ASIDE RIGHT AND LEFT ###
 ________________________________*/
 
@@ -182,7 +171,7 @@ ________________________________*/
 ___________________________________*/
 
 /* footer conatiner and styles*/
-.footer {
+footer {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -191,13 +180,6 @@ ___________________________________*/
   grid-column: 1/13;
   width: 100vw;
   margin-left: calc(-1 * ((100vw - 100%) / 2));
-}
-
-#foot {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .social {
@@ -287,13 +269,7 @@ main {
     justify-content: center;
   }
 
-  #head {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header {
+  header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -331,10 +307,6 @@ main {
     padding: 0;
   }
 
-  #main {
-    padding: 100px 0px 100px 0px;
-  }
-
   div.main {
     justify-content: center;
     padding: 0;
@@ -356,30 +328,16 @@ main {
     font-size: 0.85em;
   }
 
-
-
-/* footer styles */
+/* small screen footer styles */
   footer {
     display: flex;
     width: 100%;
-    padding: 0;
-    position: fixed;
-    padding-bottom: 60px;
+    padding: 30px 0px 0px 0px;
     flex-direction: column;
   }
 
   h1 {
     margin: 0;
-  }
-
-  .footer {
-    padding: 0;
-  }
-
-  #foot {
-    grid-area: footer;
-    flex-direction: column;
-    padding: 10px 0px 70px 0px;
   }
 
   p {

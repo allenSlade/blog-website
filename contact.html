@@ -6,92 +6,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Birder's Blog Contact</title>
+  <title>A Birder's Blog</title>
   <link rel="stylesheet" href="contact.css">
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 </head>
-
+<!-- main grid -->
 <!-- website body -->
-<body>
-    <!-- main grid -->
-    <!-- middle using flex -->
-  <div class="container">
-      <!-- blog-boxes using flex -->
-    <div class="header">
-      <header id="head" role="heading">
-        <img src="images/kiwi-bird-icon.png" alt="Site Logo of a Kiwi Bird">
-        <h1 id="blog-title">A Birder's Blog</h1>
-        <nav role="menubar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+<body class="container">
+  <!-- middle using flex -->
+  <!-- blog-boxes using flex -->
+  <header role="heading">
+    <img src="images/kiwi-bird-icon.png" alt="Site Logo of a Kiwi Bird">
+    <h1 id="blog-title">A Birder's Blog</h1>
+    <nav role="menubar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- aside left section -->
+  <aside class="aside-left" role="grid"></aside>
+  <!-- main section -->
+  <main role="main">
+    <!-- Contact Form -->
+    <form action="">
+      <h1>Contact</h1>
+      <p class="required"><em>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</em></p>
+      <section>
+        <h2>Contact information</h2>
+        <p>
+          <label for="name">
+            <span>Name: </span>
+            <strong><abbr title="required">*</abbr></strong>
+            <input type="text">
+          </label>
+        </p>
+        <p>
+          <label for="mail">
+            <span>Email: </span>
+            <strong><abbr title="required">*</abbr></strong>
+            <input type="text">
+          </label>
+        </p>
+        <p>
+          <label for="question">
+            <span>Question: </span>
+            <textarea name="question" id="question" cols="40" rows="10">Share about your bird sighting or ask a question.</textarea>
+          </label>
+          <p>
+            <label for="mailing-list">
+              <p class="required">Would you like to recieve email notifications of new and upcoming blog posts?</p>
+              <input class="radio" type="radio" name="mailing-list" value="">
+            </label>
+          </p>
+        </p>
+      </section>
+      <p><button type="submit">Submit</button></p>
+    </form>
+  </main>
+  <!-- aside right section -->
+  <aside  class="aside-right" id="blog-box-four" role="grid"></aside>
+  <!-- footer section -->
+  <footer role="contentinfo">
+    <div class="social">
+      <a href="#"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
+      <a href="#"><img src="images/twitter-icon.png" alt="Twitter Icon"></a>
+      <a href="#"><img src="images/facebook-icon.png" alt="Facebook Icon"></a>
     </div>
-    <!-- aside left section -->
-    <div class="aside-left">
-      <aside role="grid" id="blog-box-two"></aside>
+    <div class="footer-info" role="contentinfo">
+      <p>&copy A Birder's Blog | <a href="contact.html">Contact</a></p>
     </div>
-    <!-- main section -->
-    <div class="main">
-      <main  id="main" role="main">
-        <!-- Contact Form -->
-        <form action="">
-          <h1>Contact</h1>
-          <p class="required"><em>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</em></p>
-          <section>
-            <h2>Contact information</h2>
-            <p>
-              <label for="name">
-                <span>Name: </span>
-                <strong><abbr title="required">*</abbr></strong>
-                <input type="text">
-              </label>
-            </p>
-            <p>
-              <label for="mail">
-                <span>Email: </span>
-                <strong><abbr title="required">*</abbr></strong>
-                <input type="text">
-              </label>
-            </p>
-            <p>
-              <label for="question">
-                <span>Question: </span>
-                <textarea name="question" id="question" cols="40" rows="10">Share about your bird sighting or ask a question.</textarea>
-              </label>
-              <p>
-                <label for="mailing-list">
-                  <p class="required">Would you like to recieve email notifications of new and upcoming blog posts?</p>
-                  <input class="radio" type="radio" name="mailing-list" value="">
-                </label>
-              </p>
-            </p>
-          </section>
-          <p><button type="submit">Submit</button></p>
-        </form>
-
-      </main>
-    </div>
-    <!-- aside right section -->
-    <div class="aside-right" role="grid">
-      <aside  id="blog-box-four"></aside>
-    </div>
-    <div class="footer" role="contentinfo">
-      <!-- footer section -->
-      <footer  id="foot">
-        <div class="social">
-          <a href="#"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
-          <a href="#"><img src="images/twitter-icon.png" alt="Twitter Icon"></a>
-          <a href="#"><img src="images/facebook-icon.png" alt="Facebook Icon"></a>
-        </div>
-        <div class="footer-info" role="contentinfo">
-          <p>&copy A Birder's Blog | <a href="#">Contact</a></p>
-        </div>
-      </footer>
-    </div>
-  </div>
-</body>
+  </footer>
+ </body>
 </html>
