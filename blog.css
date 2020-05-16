@@ -12,6 +12,7 @@ html {
 html {
   display: block;
   margin: 0;
+  font-size: 100%;
 }
 
 /* ### MAIN GRID CONTAINER ###
@@ -46,7 +47,7 @@ _____________________________________*/
   align-items: center;
   font-family: 'Amatic SC', cursive;
   margin: 0;
-  padding: 20px;
+  padding-left: 40px;
   font-size: 20px;
   color: #D0BBA3;
   width: 100vw;
@@ -77,10 +78,12 @@ nav {
   display: flex;
   width: 200%;
 }
+
 nav > ul > li > a {
   margin-right: 20px;
   font-family: "Open Sans", semi-bold;
   text-decoration: none;
+  justify-content: space-between;
   font-size: 16px;
   color: #2C909C;
   width: 25%;
@@ -88,6 +91,7 @@ nav > ul > li > a {
 
 nav, ul {
   margin: 0;
+  padding-left: 30px;
 }
 
 nav ul li {
@@ -119,13 +123,20 @@ h1 {
   margin: 0;
 }
 
+figure {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+figcaption {
+  text-align: center;
+}
+
 .main-image {
-  /* border: 1px solid black; */
   object-fit: fill;
   width: 100%;
-  margin: 0;
-  margin: 5% 0% 5% 0%;
-  box-shadow: 5px 10px 7px 3px black;
+  margin-bottom: 10px;
 }
 
 .blog-title {
@@ -148,6 +159,10 @@ h1 {
 main p {
   font-family: "Open Sans";
   font-size: 0.75em;
+  margin: 10px 0px 10px 0px;
+}
+
+p.about {
   margin: 0;
 }
 
@@ -264,4 +279,15 @@ _____________________________________*/
     margin-right: 10%;
     object-fit: contain;
   }
+
+  main {
+    font-size: 0.90em;
+  }
+
+  figcaption {
+    font-size: 0.75em;
+  }
+
+
+
 }
