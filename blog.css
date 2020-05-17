@@ -1,3 +1,6 @@
+@import url(//fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -12,14 +15,11 @@ html {
   box-sizing: inherit;
   }
 
-@import url(//fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap);
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 /* ### MAIN GRID CONTAINER ###
 _____________________________________*/
 
 .container {
-  /* border: 1px solid black; */
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
@@ -32,7 +32,7 @@ _____________________________________*/
     "footer";
   margin-left: 10%;
   margin-right: 10%;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 
@@ -43,6 +43,7 @@ _____________________________________*/
 /* header styling */
 header {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: 'Amatic SC', cursive;
@@ -60,8 +61,8 @@ img {
     margin: 20px 20px 0px 0px;
 }
 
-h1 #blog-title {
-  display: inline;
+#blog-title {
+  display: flex;
   flex-direction: row;
   align-self: center;
   justify-content: center;
@@ -271,6 +272,7 @@ _____________________________________*/
   .container {
     display: grid;
     height: 100vh;
+    width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: 0.25fr 1fr 1fr 1fr 0.25fr;
     grid-template-areas:
@@ -279,34 +281,32 @@ _____________________________________*/
       "image"
       "main"
       "footer";
-    margin-left: 10%;
-    margin-right: 10%;
     object-fit: contain;
   }
 
+  html {
+    width: 100vw;
+  }
+
+  body.container {
+    margin: 0;
+  }
+
   main {
-    font-size: 0.90em;
+    font-size: 1em;
   }
 
   figcaption {
     font-size: 0.75em;
   }
 
-  header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
 
   div > h1 {
-    display: flex;
-    flex-direction: row;
+    display: block;
   }
 
   nav {
-    display: flex;
+    display: block;
     align-self: center;
     justify-content: center;
   }
